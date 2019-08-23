@@ -1,0 +1,9 @@
+package application;
+
+public class Programa7 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

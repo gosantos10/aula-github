@@ -1,0 +1,40 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entidades.Aluno;
+
+public class Progama4 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Aluno aluno = new Aluno();
+		
+		System.out.println("Entre com as informações do aluno");
+		System.out.println("-------------------------------------");
+		
+		System.out.print("Nome do aluno: ");
+		aluno.nome = sc.nextLine();
+		System.out.println("1º Nota: ");
+		aluno.nota1 = sc.nextDouble();
+		System.out.println("2º Nota: ");
+		aluno.nota2 = sc.nextDouble();
+		System.out.println("3º Nota: ");
+		aluno.nota3 = sc.nextDouble();
+		System.out.println();
+		
+		System.out.println("De acordo com as notas apresentadas o Aluno está: " + aluno.calcMedia());
+		
+		
+		
+		
+		
+		
+		sc.close();
+
+	}
+
+}

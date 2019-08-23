@@ -1,0 +1,70 @@
+package entidades;
+
+
+
+public class ContaBanco {
+	// Atributos
+	private int numConta;
+	private String nomeTitular;
+	private double saldo;
+	
+	//Construtor 1
+	public ContaBanco(int numConta, String nomeTitular) {
+		this.numConta = numConta;
+		this.nomeTitular = nomeTitular;
+	}
+
+	// Construtor 2
+	public ContaBanco(int numConta, String nomeTitular, double saldo) {
+		this.numConta = numConta;
+		this.nomeTitular = nomeTitular;
+		this.saldo = saldo;
+	}
+	
+	//Construtor 3
+	public ContaBanco() {
+		
+	}
+
+	// métodos getter e setter
+
+	public int getnumConta() {
+
+		return this.numConta;
+	}
+
+	public String getnomeTitular() {
+
+		return this.nomeTitular;
+	}
+
+	public void setnomeTitular(String nomeTitular) {
+		this.nomeTitular = nomeTitular;
+	}
+
+	public double getSaldo() {
+
+		return this.saldo;
+	}
+
+	// métodos normais
+
+	public void mostrar() {	
+		System.out.println("DADOS ATUALIZADOS:");
+		System.out.println("Nome do titular da conta: " + this.nomeTitular);
+		System.out.println("Número da conta: " + this.numConta);
+		System.out.println("Saldo da conta: " + this.saldo);
+	}
+	
+	public double Depositar(double valorDep) {
+		
+		this.saldo += valorDep;
+		return this.saldo;
+	}
+	
+	public double Sacar(double valorSaque) {
+		this.saldo -= valorSaque;
+		return this.saldo;
+	}
+
+}

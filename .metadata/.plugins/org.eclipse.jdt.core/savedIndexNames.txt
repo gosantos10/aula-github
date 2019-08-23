@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/home/tegra/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+2322431795.index
+606814479.index

@@ -1,0 +1,46 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entidades.ContaBanco;
+
+public class Programa7 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("Insira os dados da conta");
+		System.out.println("----------------------------");
+		System.out.print("Nome: ");
+		String nomeTitular = sc.nextLine();
+		System.out.print("Número da conta: ");
+		int numConta = sc.nextInt();
+		
+		ContaBanco c1 = new ContaBanco(numConta, nomeTitular);
+		
+		System.out.println();
+		System.out.println("Dados da Conta: " + c1.mostrar());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+		
+		
+
+	}
+
+}

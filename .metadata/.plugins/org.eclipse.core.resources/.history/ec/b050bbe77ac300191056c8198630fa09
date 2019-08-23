@@ -1,0 +1,25 @@
+package aulas_da_udemy;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Vetores {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+
+		int n = sc.nextInt();
+		double[] vect = new double[n]; // cria um vetor do tipo double de n posições
+
+		for (int i = 0; i < n; i++) { // variavel i começando com zero vai até o numero que n receber e a cada vez que
+										// volta incrementa 1
+			vect[i] = sc.nextDouble(); // vect na posição i na primeira passagem é a posição 0 do vetor que recebe a
+										// primeira altura que o usuario digitar
+		}
+
+		sc.close();
+
+	}
+
+}

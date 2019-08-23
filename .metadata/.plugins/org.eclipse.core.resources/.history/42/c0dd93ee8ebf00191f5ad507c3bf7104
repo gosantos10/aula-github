@@ -1,0 +1,14 @@
+package aulas_da_udemy;
+
+
+public class TreinosParaProjeto {
+
+	public static void main(String[] args) {
+		
+		double preco = 22.50;5
+		double desconto = (preco > 10) ? preco * 0.5 : preco * 0.05;
+		System.out.println(desconto);
+		
+		
+	}
+}

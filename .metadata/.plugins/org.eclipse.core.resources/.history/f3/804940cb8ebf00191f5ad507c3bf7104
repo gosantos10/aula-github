@@ -1,0 +1,74 @@
+package aulas_da_udemy;
+
+import java.util.Scanner;
+
+public class TreinosParaProjeto {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("------LEGENDA------");
+		System.out.println("1 = domingo");	
+		System.out.println("2 = segunda");
+		System.out.println("3 = terça");
+		System.out.println("4 = quarta");
+		System.out.println("5 = quinta");
+		System.out.println("6 = sexta");
+		System.out.println("7 = sábado");
+		System.out.println("------------");
+		
+		int num = sc.nextInt();
+		String dia;
+		
+		switch (num) {
+		
+		case 1:
+			dia = "Domingo";
+			System.out.println(dia);
+			break;
+		
+		case 2:
+			dia = "Segunda";
+			System.out.println(dia);
+			break;
+			
+		case 3:
+			dia = "Terça";
+			System.out.println(dia);
+			break;
+			
+		case 4:
+			dia = "Quarta";
+			System.out.println(dia);
+			break;
+			
+		case 5:
+			dia = "Quinta";
+			System.out.println(dia);
+			break;
+			
+		case 6:
+			dia = "Sexta";
+			System.out.println(dia);
+			break;
+			
+		case 7:
+			dia = "Sábado";
+			System.out.println(dia);
+			break;
+			
+		default:
+			System.out.println("Dia inválido. Por favor, consulte a legenda!");
+		}
+		
+		sc.close();
+		
+		
+			
+	
+	
+		
+	}
+}
+
+

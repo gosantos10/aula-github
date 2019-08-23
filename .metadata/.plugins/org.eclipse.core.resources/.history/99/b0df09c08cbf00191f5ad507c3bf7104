@@ -1,0 +1,34 @@
+package aulas_da_udemy;
+
+import java.util.Scanner;
+
+public class TreinosParaProjeto {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("------LEGENDA------");
+		System.out.println("1 = domingo");	
+		System.out.println("2 = segunda");
+		System.out.println("3 = terça");
+		System.out.println("4 = quarta");
+		System.out.println("5 = quinta");
+		System.out.println("6 = sexta");
+		System.out.println("7 = sábado");
+		System.out.println("------------");
+		
+		int dia = sc.nextInt();
+		
+		switch (dia) {
+		
+		case 1:
+			dia = Integer.parseInt("Domingo");
+			break;
+		}
+	
+	
+		
+	}
+}
+
+

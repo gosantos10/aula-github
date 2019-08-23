@@ -1,0 +1,16 @@
+package application;
+
+import java.util.Locale;
+
+import entidades.ContaBanco;
+
+public class Programa7 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		ContaBanco c1 = new ContaBanco();
+
+	}
+
+}

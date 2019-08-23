@@ -1,0 +1,29 @@
+package entidades;
+
+import java.util.Scanner;
+
+public class Funcionario {
+
+	public String nome;
+	public double salarioBruto;
+	public double imposto;
+
+	public double salarioLiquido() {
+
+		double salarioLiquido = salarioBruto - imposto;
+		return salarioLiquido;
+	}
+
+	public void aumentaSalario(double porcentagem) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite a procentagem desejada para aumentar o salário do funcionario: ");
+		porcentagem = sc.nextDouble();
+		double aumento = salarioBruto * (porcentagem / 100);
+		salarioBruto = salarioBruto + aumento;
+		System.out.println("O novo salário é: " + salarioBruto);
+
+		sc.close();
+	}
+
+}

@@ -1,0 +1,20 @@
+package application;
+
+import java.util.Scanner;
+
+public class Retangulo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Entre com o valor da altura do retângulo: ");
+		double altura = sc.nextDouble();
+		System.out.println("Entre com o valor da larguta do retângulo: ");
+		double largura = sc.nextDouble();
+		
+		
+
+	}
+
+}

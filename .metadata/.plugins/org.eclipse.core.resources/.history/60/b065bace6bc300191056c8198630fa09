@@ -1,0 +1,95 @@
+package entidades;
+
+import java.util.Scanner;
+
+public class ContaBanco {
+	// Atributos
+	private int numConta;
+	private String nomeTitular;
+	private double saldo;
+	
+	//Construtor 1
+	public ContaBanco(int numConta, String nomeTitular) {
+		this.numConta = numConta;
+		this.nomeTitular = nomeTitular;
+	}
+
+	// Construtor 2
+	public ContaBanco(int numConta, String nomeTitular, double saldo) {
+		this.numConta = numConta;
+		this.nomeTitular = nomeTitular;
+		this.saldo = saldo;
+	}
+	
+	//Construtor 3
+	public ContaBanco() {
+		
+	}
+
+	// métodos getter e setter
+
+	public int getnumConta() {
+
+		return this.numConta;
+	}
+
+	public String getnomeTitular() {
+
+		return this.nomeTitular;
+	}
+
+	public void setnomeTitular(String nomeTitular) {
+		this.nomeTitular = nomeTitular;
+	}
+
+	public double getSaldo() {
+
+		return this.saldo;
+	}
+
+	// métodos normais
+
+	public void mostrar() {	
+		System.out.println("DADOS ATUALIZADOS:");
+		System.out.println("Nome do titular da conta: " + this.nomeTitular);
+		System.out.println("Número da conta: " + this.numConta);
+		System.out.println("Saldo da conta: " + this.saldo);
+	}
+
+	public void Cadastrar() {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Para criar uma conta em nosso banco preencha os dados requisitados abaixo.");
+		System.out.println("------------------------------------------------------------------------------");
+		System.out.print("Nome do Titular: ");
+		this.nomeTitular = sc.nextLine();
+		System.out.print("Número da Conta: ");
+		this.numConta = sc.nextInt();
+		System.out.println("Você deseja realizar um depósito inicial? 1=Sim/2=Não");
+		int resp = sc.nextInt();
+
+		if (resp == 1) {
+			System.out.print("Informe o valor do depósito: R$");
+			double valor = sc.nextDouble();
+			System.out.print("Conta criada com sucesso e depósito realizado no valor de R$" + valor);
+			this.saldo += valor;
+			mostrar();
+		} else {
+			System.out.println("Conta criada com Sucesso!");
+			mostrar();
+		}
+		sc.close();
+
+	}
+	
+	public double Depositar(double valorDep) {
+		this.saldo += valorDep;
+		return this.saldo;
+	}
+	
+	public double Sacar(double valorSaque) {
+		this.saldo -= valorSaque;
+		return this.saldo;
+	}
+
+}

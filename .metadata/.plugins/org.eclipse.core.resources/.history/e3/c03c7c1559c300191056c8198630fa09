@@ -1,0 +1,26 @@
+package entidades;
+
+public class ContaBanco {
+	// Atributos
+	private int numConta;
+	private String nomeTitular;
+	private double saldo;
+	
+	//Construtor
+	public ContaBanco() {
+		
+	}
+	
+	//métodos getter e setter
+	
+	public int getnumConta() {
+		
+		return numConta;
+	}
+	
+	public String getnomeTitular() {
+		
+		return nomeTitular;
+	}
+
+}

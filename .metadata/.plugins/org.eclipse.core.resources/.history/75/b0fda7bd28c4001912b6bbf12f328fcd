@@ -1,0 +1,31 @@
+package aulas_da_udemy;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Lista {
+
+	public static void main(String[] args) {
+		
+		List<String> list = new ArrayList<>();
+		
+		list.add("Maria"); //adicionar itens dentro da lista
+		list.add("Alex");
+		list.add("Bob");
+		list.add("Anna");
+		
+		list.add(2, "Marco"); //adiciona em posição específica
+		
+		System.out.println(list.size()); //mostra o tamanho da lista
+		
+		for (String x : list) {
+			System.out.println(x);
+		}
+		
+		list.remove("Anna"); //remove um dado da lista por nome
+		list.remove(1); //remove um dado pela posição
+
+
+	}
+
+}

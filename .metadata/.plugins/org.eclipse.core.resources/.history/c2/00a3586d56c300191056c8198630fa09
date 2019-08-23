@@ -1,0 +1,51 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entidades.ContaBanco;
+
+public class Programa7 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+		System.out.println("BEM VINDO AO BANCO PURURU");
+		System.out.println("----------------------------");
+		System.out.println("Deseja criar uma conta? 1 = Sim / 2 = Não");
+		int resp = sc.nextInt();
+		
+		if (resp == 1) {
+			ContaBanco c1 = new ContaBanco ();
+			System.out.println("Deseja realizar um depósito?");
+			int resp2 = sc.nextInt();
+			if(resp2 == 1) {
+				System.out.println("Digite o valor do depósito: R$");
+				double valorDep = sc.nextDouble();
+				c1.deposito(valorDep);
+			}
+		} else {
+			System.out.println("Obrigado por visitar nosso Site!");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

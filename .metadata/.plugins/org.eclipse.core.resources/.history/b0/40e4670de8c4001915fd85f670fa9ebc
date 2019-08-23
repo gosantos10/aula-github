@@ -1,0 +1,8 @@
+package aulas_da_udemy;
+
+public class Snippet {
+	public static void main(String[] args) {
+		sc.close()
+	}
+}
+

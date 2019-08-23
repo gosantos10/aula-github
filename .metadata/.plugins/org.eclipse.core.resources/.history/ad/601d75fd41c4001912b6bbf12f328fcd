@@ -1,0 +1,43 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entidades.Empregado;
+
+public class Programa10 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Empregado e1 = new Empregado("Guilherme", 131, 1.200);
+		Empregado e2 = new Empregado("Maria", 171, 1.500);
+		Empregado e3 = new Empregado("João", 255, 2.400);
+		Empregado e4 = new Empregado("Paulo", 171, 3.000);
+		
+		
+		List<Empregado>empregados = new ArrayList<>();
+		
+		empregados.add(e1);
+		empregados.add(e2);
+		empregados.add(e3);
+		empregados.add(e4);
+		
+		for(Empregado nome : empregados) {
+			System.out.println(nome);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

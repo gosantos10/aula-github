@@ -1,0 +1,49 @@
+package entidades;
+
+public class Produto {
+
+	private String nome;
+	private double preco;
+	private int quantidade;
+	
+	public Produto() {
+		
+	}
+	
+	public Produto(String nome, double preco, int quantidade) { //Construtor normal
+		this.nome = nome;
+		this.preco = preco;
+		this.quantidade = quantidade;
+	}
+	
+	public Produto(String nome, double preco) { //Construto sobrecarregado. A diferença são os parâmetros6
+		this.nome = nome;
+		this.preco = preco;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double valorTotalEstoque() {
+		return (preco * quantidade);
+	} 
+
+	public void addProduto(int quantidade) {
+		this.quantidade += quantidade; // a palavra reservada this aponta para o atributo da Classe. Difrenciando do
+										// parâmetro passado pelo método. Pois ambos tem o mesmo nome
+	}
+
+	public void removeProduto(int quantidade) {
+		this.quantidade -= quantidade;
+	}
+
+	public String toString() {
+		return nome + ", $" + String.format("%.3f", preco) + ", " + quantidade + " unidades, Total: $"
+				+ String.format("%.3f", valorTotalEstoque());
+	}
+}

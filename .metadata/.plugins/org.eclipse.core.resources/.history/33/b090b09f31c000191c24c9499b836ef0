@@ -1,0 +1,39 @@
+package aulas_da_udemy;
+
+import java.util.Scanner;
+
+public class TreinosParaProjeto {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Por favor, digite um valor  positivo: ");
+		int n1 = sc.nextInt();
+		int i = 0;
+		
+		for (int x = 0; x<=0;) {
+			System.out.println("ERRO! O número deve ser positivo");
+			System.out.print("Por favor, digite um valor  positivo: ");
+			i = sc.nextInt();
+			
+			if (i>0) {
+				for( i = 0; i>0; i++) {
+				System.out.println("Valor #" + i + ": ");
+				}
+			}
+		}
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+}

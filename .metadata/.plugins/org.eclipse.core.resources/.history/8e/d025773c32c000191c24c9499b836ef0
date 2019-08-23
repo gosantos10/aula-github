@@ -1,0 +1,19 @@
+package aulas_da_udemy;
+
+import java.util.Scanner;
+
+public class TreinosParaProjeto {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite um número: ");
+		double n = sc.nextDouble();
+		double sq = Math.sqrt(n);
+		System.out.printf("Raiz quadrada = %.3f%n",sq);
+
+		sc.close();
+
+	}
+}

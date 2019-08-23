@@ -1,0 +1,63 @@
+package entidades;
+
+import java.util.Scanner;
+
+public class ContaBanco {
+	//Atributos
+	private String numConta;
+	private String nomeTitular;
+	private double saldo;
+	
+	//Construtor
+	public ContaBanco(String numConta, String nomeTitular, double saldo) {
+		this.numConta = numConta;
+		this.nomeTitular = nomeTitular;
+		this.saldo = saldo;
+	}
+	
+	//Métodos Getter e Setter de cada atributo
+	
+	public String getnumConta() {
+		
+		return numConta;
+	}
+	
+	public String getnomeTitular() {
+		
+		return nomeTitular;
+	}
+	
+	public void setnomeTitular(String nomeTitular) {
+		
+		this.nomeTitular = nomeTitular;
+	}
+	
+	public double getSaldo() {
+		
+		return this.saldo;
+	}
+	
+	//Métodos necessários para ações no programa
+	
+	public double deposito(double valor) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o valor que deseja depositar: R$");
+		valor = sc.nextDouble();
+		
+		this.saldo += valor;
+		sc.close();
+		return this.saldo;
+	}
+	
+	public double saque(double valor) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o valor que deseja sacar: R$");
+		valor = sc.nextDouble();
+		
+		this.saldo -= (valor + 5);
+		sc.close();
+		return this.saldo;
+	}
+	
+
+}

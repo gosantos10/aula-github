@@ -1,0 +1,12 @@
+package entidades;
+
+public class Conversor {
+	
+	public static final double DOLAR = 3.10;
+	
+	public static double converter(double qtdReal) {
+		
+		return qtdReal * DOLAR + (DOLAR * 0.06);
+	}
+
+}
